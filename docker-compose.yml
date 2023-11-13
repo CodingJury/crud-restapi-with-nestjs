@@ -10,5 +10,15 @@ services:
       - restapi
     ports:
       - 5434:5432
+  test-db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: test_db_user_dhananjay
+      POSTGRES_PASSWORD: test_db_pass_123
+      POSTGRES_DB: test_db_nest
+    networks:
+      - restapi
+    ports:
+      - 5435:5432
 networks:
   restapi:
