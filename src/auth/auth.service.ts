@@ -1,10 +1,10 @@
-import { ForbiddenException, Injectable } from "@nestjs/common"
-import { PrismaService } from "src/prisma/prisma.service"
-import { AuthDto } from "./dto"
-import * as argon from "argon2"
-import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library"
-import { JwtService } from "@nestjs/jwt"
-import { ConfigService } from "@nestjs/config"
+import { ForbiddenException, Injectable } from "@nestjs/common";
+import { JwtService } from "@nestjs/jwt";
+import { ConfigService } from "@nestjs/config";
+import * as argon from "argon2";
+import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
+import { PrismaService } from "src/prisma/prisma.service";
+import { AuthDto } from "./dto";
 
 @Injectable()
 export class AuthService {
@@ -36,6 +36,7 @@ export class AuthService {
           throw new ForbiddenException('Credentials taken')
         }
       }
+
       throw error;
     }
   }
@@ -55,7 +56,7 @@ export class AuthService {
     //if password incorrect throw exception
     if (!pwMatches) throw new ForbiddenException('Credentials incorrect')
 
-    //send back the token
+    //send back jwt token i.e. generated from "id" and "email"
     return this.signToken(user.id, user.email)
   }
 
@@ -76,5 +77,4 @@ export class AuthService {
       access_token: token
     }
   }
-
 }

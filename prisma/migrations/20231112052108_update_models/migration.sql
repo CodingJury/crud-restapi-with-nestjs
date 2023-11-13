@@ -14,7 +14,7 @@ DROP TABLE "User";
 -- CreateTable
 CREATE TABLE "users" (
     "id" SERIAL NOT NULL,
-    "creaetdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "email" TEXT NOT NULL,
     "hash" TEXT NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE "users" (
 -- CreateTable
 CREATE TABLE "bookmarks" (
     "id" SERIAL NOT NULL,
-    "creaetdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
     "title" TEXT NOT NULL,
     "description" TEXT,
