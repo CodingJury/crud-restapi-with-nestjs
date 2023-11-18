@@ -1,0 +1,610 @@
+{
+	"info": {
+		"_postman_id": "7fe9f11a-84f4-44e0-ab9b-c97d8e89bcf1",
+		"name": "crud-restapi-with-nestjs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20103124"
+	},
+	"item": [
+		{
+			"name": "1a. auth/signup REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"dhananjay@gmail.com\",\r\n    \"password\": \"thispasswordisveryhard\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "dhananjay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"dhananjay@gmail.com\",\r\n    \"password\": \"thispasswordisveryhard\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"44-x1WOpZVX4XIXyrNRuBKxXt6ADYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2023 18:47:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Credentials taken\",\n    \"error\": \"Forbidden\",\n    \"statusCode\": 403\n}"
+				},
+				{
+					"name": "akash",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"akash@gmail.com\",\r\n    \"password\": \"thispasswordisveryhard\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"44-x1WOpZVX4XIXyrNRuBKxXt6ADYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2023 18:52:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Credentials taken\",\n    \"error\": \"Forbidden\",\n    \"statusCode\": 403\n}"
+				}
+			]
+		},
+		{
+			"name": "1b. auth/signin LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"dhananjay@gmail.com\",\r\n    \"password\": \"thispasswordisveryhard\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "dhananjay",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"dhananjay@gmail.com\",\r\n    \"password\": \"thispasswordisveryhard\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "akash",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"akash@gmail.com\",\r\n    \"password\": \"thispasswordisveryhard\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "2a. users/me",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjYsImVtYWlsIjoiYWthc2hAZ21haWwuY29tIiwiaWF0IjoxNjk5OTAxNzAwLCJleHAiOjE2OTk5MDI2MDB9.9_Vz7VK8sybcxWCAG2_SYfPA5-uexNhiOzU8C-IBnrk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/users/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2b. users/myEmail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjYsImVtYWlsIjoiYWthc2hAZ21haWwuY29tIiwiaWF0IjoxNjk5OTAxNzAwLCJleHAiOjE2OTk5MDI2MDB9.9_Vz7VK8sybcxWCAG2_SYfPA5-uexNhiOzU8C-IBnrk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3333/users/myEmail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"myEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2c. users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZGhhbmFuamF5QGdtYWlsLmNvbSIsImlhdCI6MTY5OTkzMjI0NiwiZXhwIjoxNjk5OTMzMTQ2fQ.3ZsvpZmOuOMI2zwum7ydtf-GK-_av90IH5TI4xdlD3A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"dhananjay@gmail.com\",\r\n    \"firstName\": \"Dhananjay\",\r\n    \"lastName\": \"Patel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3a. bookmark CREATING",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZGhhbmFuamF5QGdtYWlsLmNvbSIsImlhdCI6MTY5OTkzMjI0NiwiZXhwIjoxNjk5OTMzMTQ2fQ.3ZsvpZmOuOMI2zwum7ydtf-GK-_av90IH5TI4xdlD3A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Best fruit\",\r\n    \"description\": \"Apple\",\r\n    \"link\": \"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/bookmarks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"bookmarks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ex 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Best fruit\",\r\n    \"description\": \"Apple\",\r\n    \"link\": \"www.google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/bookmarks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"bookmarks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-snxi/uZEJ2yFQ9sQr8WdqFEpg0Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2023 18:48:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"createdAt\": \"2023-11-13T18:48:08.718Z\",\n    \"updatedAt\": \"2023-11-13T18:48:08.718Z\",\n    \"title\": \"Best fruit\",\n    \"description\": \"Apple\",\n    \"link\": \"www.google.com\",\n    \"userId\": 2\n}"
+				},
+				{
+					"name": "ex 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Rainbow\",\r\n    \"description\": \"7 colors\",\r\n    \"link\": \"www.google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/bookmarks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"bookmarks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-lW6Vj09HeKphY47J4the4dE60VA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 13 Nov 2023 18:49:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"createdAt\": \"2023-11-13T18:49:58.541Z\",\n    \"updatedAt\": \"2023-11-13T18:49:58.541Z\",\n    \"title\": \"Rainbow\",\n    \"description\": \"7 colors\",\n    \"link\": \"www.google.com\",\n    \"userId\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "3b. bookmark GET ALL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGhhbmFuamF5QGdtYWlsLmNvbSIsImlhdCI6MTY5OTkwMTI1OCwiZXhwIjoxNjk5OTAyMTU4fQ.Yx_tqXLIYs2LRYKkqv8CrXtK0Kuc8VaM7eEX4BlTAI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Best fruit\",\r\n    \"description\": \"Apple\",\r\n    \"link\": \"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/bookmarks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"bookmarks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3c. bookmark GET SPECIFIC",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGhhbmFuamF5QGdtYWlsLmNvbSIsImlhdCI6MTY5OTkwMTI1OCwiZXhwIjoxNjk5OTAyMTU4fQ.Yx_tqXLIYs2LRYKkqv8CrXtK0Kuc8VaM7eEX4BlTAI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Best fruit\",\r\n    \"description\": \"Apple\",\r\n    \"link\": \"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/bookmarks/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"bookmarks",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
